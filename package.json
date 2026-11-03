@@ -1,0 +1,16 @@
+{
+  "name": "ministore-workspace",
+  "version": "1.0.0",
+  "description": "MiniStore - Modern Production-Ready MERN Full Stack Application",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "seed": "npm --prefix backend run seed",
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend run dev",
+    "dev": "node -e \"const { spawn } = require('child_process'); const p1 = spawn('npm', ['--prefix', 'backend', 'run', 'dev'], { stdio: 'inherit', shell: true }); const p2 = spawn('npm', ['--prefix', 'frontend', 'run', 'dev'], { stdio: 'inherit', shell: true });\""
+  },
+  "keywords": ["mern", "ecommerce", "react", "node", "express", "mongodb", "tailwind"],
+  "author": "",
+  "license": "MIT"
+}
+
